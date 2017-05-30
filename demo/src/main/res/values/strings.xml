@@ -121,4 +121,18 @@
     <string name="image_transition">image_transition</string>
     <string name="press_again_exit">再按一次退出</string>
     <string name="send">发送</string>
+    <string name="str_design_mode_command_mode_draw">绘图</string>
+    <string name="str_design_mode_command_mode_tetris">俄罗斯方块</string>
+    <string name="str_design_mode_command_mode_uml">uml类图说明</string>
+    <string name="str_withdraw">撤回</string>
+    <string name="str_red">红色</string>
+    <string name="str_green">绿色</string>
+    <string name="str_blue">蓝色</string>
+    <string name="str_design_pattern_normal_paint">普通笔刷</string>
+    <string name="str_design_pattern_circle_paint">圆形笔刷</string>
+    <string name="str_redo">重做</string>
+    <string name="str_left">左边</string>
+    <string name="str_right">右边</string>
+    <string name="str_fall">加速下落</string>
+    <string name="str_transform">改变形状</string>
 </resources>

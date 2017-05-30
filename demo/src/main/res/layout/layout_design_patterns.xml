@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/id_design_patterns_command_pattern_draw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_design_mode_command_mode_draw"/>
+
+    <Button
+        android:id="@+id/id_design_patterns_command_pattern_tetris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_design_mode_command_mode_tetris"/>
+
+    <Button
+        android:id="@+id/id_design_patterns_command_pattern_uml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_design_mode_command_mode_uml"/>
+
+</LinearLayout>

@@ -8,6 +8,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import me.yokeyword.sample.demo_design_patterns.CommandPatternActivity;
 import me.yokeyword.sample.demo_flow.MainActivity;
 
 /**
@@ -16,12 +19,11 @@ import me.yokeyword.sample.demo_flow.MainActivity;
 public class EnterActivity extends AppCompatActivity {
     private Toolbar mToolBar;
     private TextView mTvBtnFlow, mTvBtnWechat, mTvBtnZhihu;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enter);
-
+        ButterKnife.bind(this);
         initView();
     }
 
@@ -53,5 +55,11 @@ public class EnterActivity extends AppCompatActivity {
                 startActivity(new Intent(EnterActivity.this, me.yokeyword.sample.demo_zhihu.MainActivity.class));
             }
         });
+
+    }
+
+    @OnClick(R.id.tv_btn_enter_sign_mode)
+    void enterDesignMode() {
+        startActivity(new Intent(EnterActivity.this, CommandPatternActivity.class));
     }
 }

@@ -1,6 +1,4 @@
 apply plugin: 'com.android.application'
-//apply plugin: 'com.neenbedankt.android-apt'
-
 
 android {
     compileSdkVersion rootProject.compileSdkVersion
@@ -34,13 +32,7 @@ dependencies {
 
     // EventBus
     compile 'org.greenrobot:eventbus:3.0.0'
-//    apt 'org.greenrobot:eventbus-annotation-processor:3.0.1'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
 }
-
-// EventBus3.0 Index  实际环境建议用 Index 特性，具体查看EventBus官网
-//apt {
-//    arguments {
-//        eventBusIndex "me.yokeyword.sample.EventBusIndex"
-//    }
-//}
 

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <me.yokeyword.sample.demo_design_patterns.command_pattern.ex_draw.DrawCanvas
+        android:id="@+id/id_sv_design_patterns_command_pattern_draw_canvas"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"/>
+
+    <!--画笔颜色-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/id_btn_design_patterns_command_pattern_draw_red"
+            style="@style/style_btn_width_match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="@string/str_red"/>
+        <Button
+            android:id="@+id/id_btn_design_patterns_command_pattern_draw_green"
+            style="@style/style_btn_width_match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="@string/str_green"/>
+
+        <Button
+            android:id="@+id/id_btn_design_patterns_command_pattern_draw_blue"
+            style="@style/style_btn_width_match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="@string/str_blue"/>
+
+    </LinearLayout>
+
+    <!--画笔形状-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/id_btn_design_patterns_command_pattern_draw_shape_normal"
+            style="@style/style_btn_width_match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="@string/str_design_pattern_normal_paint"/>
+
+        <Button
+            android:id="@+id/id_btn_design_patterns_command_pattern_draw_shape_circle"
+            style="@style/style_btn_width_match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="@string/str_design_pattern_circle_paint"/>
+    </LinearLayout>
+
+    <!--撤回重做-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/id_btn_design_patterns_command_pattern_withdraw"
+            style="@style/style_btn_width_match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="@string/str_withdraw"/>
+
+        <Button
+            android:id="@+id/id_btn_design_patterns_command_pattern_redo"
+            style="@style/style_btn_width_match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="@string/str_redo"/>
+
+    </LinearLayout>
+</LinearLayout>

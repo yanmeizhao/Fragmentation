@@ -19,6 +19,9 @@ public class BaseMainFragment extends BaseFragment {
         initToolbarNav(toolbar, false);
     }
 
+    /**
+     * 初始化工具导航栏的icon及其点击监听（是否触发侧滑菜单）
+     * */
     protected void initToolbarNav(Toolbar toolbar, boolean isHome) {
         toolbar.setNavigationIcon(R.drawable.ic_menu_white_24dp);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -32,6 +35,9 @@ public class BaseMainFragment extends BaseFragment {
     }
 
 
+    /**
+     * Fragment切换动画
+     * */
     @Override
     protected FragmentAnimator onCreateFragmentAnimator() {
         FragmentAnimator fragmentAnimator = _mActivity.getFragmentAnimator();
@@ -40,6 +46,9 @@ public class BaseMainFragment extends BaseFragment {
         return fragmentAnimator;
     }
 
+    /**
+     * 将侧滑菜单监听与当前Fragment所在的上下文context绑定
+     * */
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -51,12 +60,18 @@ public class BaseMainFragment extends BaseFragment {
         }
     }
 
+    /**
+     * 将策划菜单监听与当前Fragment所在的上下文context解绑
+     * */
     @Override
     public void onDetach() {
         super.onDetach();
         mOpenDraweListener = null;
     }
 
+    /**
+     * 监听侧滑菜单是否打开
+     * */
     public interface OnFragmentOpenDrawerListener {
         void onOpenDrawer();
     }
