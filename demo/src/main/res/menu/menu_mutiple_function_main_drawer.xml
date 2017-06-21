@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/id_multiple_function_design_patterns"
+            android:icon="@drawable/ic_home_white_24dp"
+            android:title="@string/multiple_function_design_patterns"/>
+        <item
+            android:id="@+id/id_multiple_function_custom_view"
+            android:icon="@drawable/ic_discover_white_24dp"
+            android:title="@string/multiple_function_custom_view"/>
+        <item
+            android:id="@+id/id_multiple_function_custom_anim"
+            android:icon="@drawable/ic_message_white_24dp"
+            android:title="@string/multiple_function_custom_anim"/>
+        <item
+            android:id="@+id/id_multiple_function_custom_opengl"
+            android:icon="@drawable/ic_message_white_24dp"
+            android:title="@string/multiple_function_custom_opengl"/>
+    </group>
+
+    <item android:title="@string/system">
+        <menu>
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/ic_discover_white_24dp"
+                android:title="@string/login"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/swipe">
+        <menu>
+            <item
+                android:id="@+id/nav_swipe_back"
+                android:icon="@drawable/ic_touch_app_white_24dp"
+                android:title="@string/go_swipe_back"/>
+
+            <item
+                android:id="@+id/nav_swipe_back_f"
+                android:icon="@drawable/ic_touch_app_white_24dp"
+                android:title="@string/go_swipe_back_f"/>
+        </menu>
+    </item>
+</menu>

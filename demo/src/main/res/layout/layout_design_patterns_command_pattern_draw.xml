@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <me.yokeyword.sample.demo_design_patterns.command_pattern.ex_draw.DrawCanvas
+    <me.yokeyword.sample.demo_multiple_function.command_pattern.ex_draw.DrawCanvas
         android:id="@+id/id_sv_design_patterns_command_pattern_draw_canvas"
         android:layout_width="match_parent"
         android:layout_height="480dp"/>

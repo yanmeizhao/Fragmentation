@@ -19,7 +19,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".demo_design_patterns.CommandPatternActivity"
+        <activity android:name=".demo_multiple_function.MainActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".demo_multiple_function.CommandPatternActivity"
             android:launchMode="singleTask"/>
 
         <activity
@@ -36,9 +38,9 @@
             android:name=".demo_flow.SwipeBackSampleActivity"
             android:theme="@style/AppTheme.NoActionBar.SwipeBack"/>
 
-        <activity android:name=".demo_design_patterns.command_pattern.ex_uml.CommandPatternUmlActivity"/>
-        <activity android:name=".demo_design_patterns.command_pattern.ex_draw.CommandPatternDrawActivity"/>
-        <activity android:name=".demo_design_patterns.command_pattern.ex_tetris.CommandPatternTetrisActivity"/>
+        <activity android:name=".demo_multiple_function.command_pattern.ex_uml.CommandPatternUmlActivity"/>
+        <activity android:name=".demo_multiple_function.command_pattern.ex_draw.CommandPatternDrawActivity"/>
+        <activity android:name=".demo_multiple_function.command_pattern.ex_tetris.CommandPatternTetrisActivity"/>
 
     </application>
 

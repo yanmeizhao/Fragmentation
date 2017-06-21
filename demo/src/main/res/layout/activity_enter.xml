@@ -35,7 +35,7 @@
         android:background="@drawable/btn"
         android:gravity="center"
         android:layout_marginTop="24dp"
-        android:text="设计模式"
+        android:text="偶滴纳戒"
         android:textColor="@android:color/black"/>
 
     <TextView

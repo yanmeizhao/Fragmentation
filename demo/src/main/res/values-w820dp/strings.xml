@@ -11,4 +11,8 @@
     <string name="str_right">右边</string>
     <string name="str_fall">加速下落</string>
     <string name="str_transform">改变形状</string>
+    <string name="str_design_pattern">设计模式</string>
+    <string name="multiple_function_design_patterns">设计模式</string>
+    <string name="multiple_function_custom_view">自定义view</string>
+    <string name="multiple_function_custom_anim">自定义动画</string>
 </resources>
